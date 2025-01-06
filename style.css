@@ -159,7 +159,6 @@ body{
     transition: all 0.2s;
 }
 
-
 .download img:hover{
     background-color:rgb(207, 117, 147) ;
 }
@@ -179,6 +178,32 @@ body{
 
 #load:hover{
     background-color: rgb(207, 117, 147);
+}
+
+/* loader ko style kr rhe ahi yha pe */
+
+.loader {
+    display: none; /*shuru me ye hide rhega*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(227, 16, 199);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 @media(max-width:800px){
